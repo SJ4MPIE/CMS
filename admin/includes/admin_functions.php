@@ -79,4 +79,26 @@
         }
     }
 
+    function read_posts(){
+        global $connection;
+        $query = "SELECT * FROM posts";
+        $result_posts = mysqli_query($connection, $query);
+
+        while($row = mysqli_fetch_assoc($result_posts)){
+            echo "<tr><td>".$row['post_id']."</td>";
+            echo "<td>".$row['post_author']."</td>";
+            echo "<td>".$row['post_title']."</td>";
+            echo "<td>".$row['post_category_id']."</td>";
+            echo "<td>".$row['post_status']."</td>";
+            echo "<td>".$row['post_image']."</td>";
+            echo "<td>".$row['post_tags']."</td>";
+            echo "<td>".$row['post_date']."</td>";
+            echo "<td>".$row['post_comment_count']."</td>";
+            
+            // echo "<td><a href='admin_categories.php?edit={$row['cat_id']}'><i class='fas fa-edit'></i></a>";
+            // echo "<td><a href='admin_categories.php?delete={$row['cat_id']}'><i class='fas fa-times'></i></a></tr>";
+        }
+
+    }
+
     ?>

@@ -30,17 +30,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td>JDOIASJF</td>
-                                    <td>DSFGDF</td>
-                                    <td>GDSFDSFG</td>
-                                    <td>SGDFGFSD</td>
-                                    <td>GSFDSDGFD</td>
-                                    <td>GFDSGSFDG</td>
-                                    <td>GFDSGFDS</td>
-                                    <td>WRQEWRWER</td>
-                                    <td>GSDFGFDGS</td>
-                                </tr>
+                                <?php read_posts(); ?>
                             </tbody>
                         </table>
                     </div>
